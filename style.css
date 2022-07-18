@@ -7,15 +7,19 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items:  center;
 }
 .container{
     background-color: #ffffff;
+    margin-top: 21px;
     width: 870px;
     padding: 30px;
+    border-radius: 5px;
 }
 hr{
     border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
 }
 /* top players style */
 .top-player{
@@ -44,6 +48,11 @@ hr{
     font-size: 18px;
 }
 /* top blog style */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap:26px ;
+}
 .blog{
     display: flex;
 }
@@ -65,4 +74,33 @@ hr{
     text-decoration: none;
     font-size: 16px ;
     color: #562EFF;
+}
+
+/* courser style */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course-duration{
+    background-color: rgb(203, 79, 99);
+    border-radius: 30%;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: gold;
+}
+.fa-star.empty{
+    color: #858072
 }
